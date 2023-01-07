@@ -30,6 +30,8 @@ header {
   height: 90vh;
 }
 .desk {
+  padding: 1vw;
+  row-gap: 1%;
   margin-left: 12vw;
   width: 75vw;
   background-color: #506e78;
@@ -40,21 +42,26 @@ header {
 
 .desk_question-text {
   height: fit-content;
-  width: 70vw;
   background-color: #fff;
-  margin: 0.5em;
   padding: 0.5em;
 }
 .answers {
+  display: flex;
+
+  flex-wrap: wrap;
+  flex-direction: column;
+  /* align-items: baseline; */
+  gap: 1vw;
 }
+
 .answers button {
   background-color: bisque;
 }
 .desk_question-describe {
   height: fit-content;
-  width: 70vw;
+
   background-color: #fff;
-  margin: 0.5em;
+
   padding: 0.5em;
 }
 
