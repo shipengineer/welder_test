@@ -39,6 +39,8 @@ footer{
 }
 
 .navigation_logout {
+    margin-right: 2vw;
+
 }
 
 .back {
@@ -73,28 +75,46 @@ footer{
     height: fit-content;
     background-color: #fff;
     padding: 0.5em;
+    min-height: 200px;
+    max-width: 500px;
+    border-radius: 5px;
 }
 
 .answers {
+    max-width: 75%;
+min-height: 30%;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
+    /*align-items: stretch;*/
+    /*justify-content: space-around;*/
 }
 
 .answers button {
     background-color: bisque;
+    border-radius: 5px;
+    min-width: 30%;
+
 }
 .answers_column-1{
     display: flex;
+    min-width: 75%;
+    justify-content: stretch;
+    align-items: stretch;
+
 }
 .answers_column-2{
     display: flex;
+    min-width: 75%;
+    justify-content: space-around;
+
 }
 .desk_question-describe {
+    border-radius: 5px;
+    max-width: 500px;
     height: fit-content;
-
     background-color: #fff;
-
+    /*min-height: 200px;*/
     padding: 0.5em;
 }
 
@@ -144,6 +164,7 @@ position: absolute;
 
 ::-webkit-input-placeholder {
     color: #FFFFFFD8;
+
 }
 
 ::-moz-placeholder {
@@ -154,6 +175,7 @@ position: absolute;
     display: flex;
     justify-content: space-between;
     width: 500px;
+
 }
 
 .desk_authorization_buttons-enter {
@@ -161,6 +183,7 @@ position: absolute;
     height: 50px;
     border-radius: 10px;
     border: none;
+    font-size: x-large;
 }
 
 .desk_authorization_buttons-registration {
@@ -168,6 +191,8 @@ position: absolute;
     height: 50px;
     border-radius: 10px;
     border: none;
+    font-size: x-large;
+
 }
 
 .desk_authorization_error-login_active {
