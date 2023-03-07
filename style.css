@@ -1,69 +1,173 @@
-header {
-  display: flex;
-  background-color: #41c8db;
-  align-items: center;
-  height: 5vh;
+body {
+    font-family: Inter;
 }
 
+header {
+    display: flex;
+    background-color: #41c8db;
+    align-items: center;
+border: none;
+    font-family: Inter;
+}
+
+footer{
+    text-align: center;
+
+    background-color: #41c8db;
+}
 .head_user-fio {
-  text-decoration: none;
-  color: #000;
+    text-decoration: none;
+    color: #000;
 }
+
 .navigation {
-  margin-left: auto;
+    margin-left: auto;
 }
+
 .navigation a {
-  color: #000;
-  text-decoration: none;
+    color: #000;
+    text-decoration: none;
 }
+
 .navigation_error-logo {
-  size: 20px;
+    size: 20px;
 }
+
 .navigation_change-user {
-  margin-left: 2vw;
+    margin-left: 2vw;
 }
+
 .navigation_logout {
 }
+
 .back {
-  display: flex;
-  background-color: #578b9b;
-  height: 90vh;
+    display: flex;
+    background-color: #578b9b;
+    height: 92vh;
 }
+
 .desk {
-  padding: 1vw;
-  row-gap: 1%;
-  margin-left: 12vw;
-  width: 75vw;
-  background-color: #506e78;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+    padding: 1vw;
+    row-gap: 1%;
+    margin-left: 12vw;
+    width: 75vw;
+    background-color: #506e78;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
 }
 
 .desk_question-text {
-  height: fit-content;
-  background-color: #fff;
-  padding: 0.5em;
+    height: fit-content;
+    background-color: #fff;
+    padding: 0.5em;
 }
-.answers {
-  display: flex;
 
-  flex-wrap: wrap;
-  flex-direction: column;
-  /* align-items: baseline; */
-  gap: 1vw;
+.answers {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
 }
 
 .answers button {
-  background-color: bisque;
+    background-color: bisque;
+}
+.answers_column-1{
+    display: flex;
+}
+.answers_column-2{
+    display: flex;
 }
 .desk_question-describe {
-  height: fit-content;
+    height: fit-content;
 
-  background-color: #fff;
+    background-color: #fff;
 
-  padding: 0.5em;
+    padding: 0.5em;
 }
 
 .test-navigation {
+}
+
+.index_header {
+    display: flex;
+    justify-content: space-around;
+}
+
+.workshop_name {
+    font-size: xx-large;
+}
+
+.desk_authorization {
+    display: flex;
+    flex-direction: column;
+    width: 634px;
+    height: 266px;
+    background-color: #D9D9D9;
+    border-radius: 25px;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.desk_authorization-login {
+    width: 500px;
+    height: 50px;
+    background-color: #A69999;
+    border-radius: 10px;
+    border: none;
+    font-size: x-large;
+}
+
+.desk_authorization-password {
+    width: 500px;
+    height: 50px;
+    background-color: #A69999;
+    border-radius: 10px;
+    border: none;
+    font-size: x-large;
+}
+
+::-webkit-input-placeholder {
+    color: #FFFFFFD8;
+}
+
+::-moz-placeholder {
+    color: #FFFFFFD8;
+}
+
+.desk_authorization_buttons {
+    display: flex;
+    justify-content: space-between;
+    width: 500px;
+}
+
+.desk_authorization_buttons-enter {
+    width: 230px;
+    height: 50px;
+    border-radius: 10px;
+    border: none;
+}
+
+.desk_authorization_buttons-registration {
+    width: 230px;
+    height: 50px;
+    border-radius: 10px;
+    border: none;
+}
+
+.desk_authorization_error-login_active {
+    align-self: center;
+    color: #FF0000A6;
+}
+
+.desk_authorization_error-login_not-active {
+    align-self: center;
+    color: #FF0000A6;
+    visibility: hidden;
+}
+.desk_greetings-text{
+    font-size: xx-large;
+    color: #D9D9D9;
 }
