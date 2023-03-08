@@ -10,9 +10,11 @@ header {
     display: flex;
     background-color: #41c8db;
     align-items: center;
+
     border: none;
     font-family: Inter, serif;
 }
+
 
 footer {
     text-align: center;
@@ -248,6 +250,7 @@ footer {
     text-align: center;
     padding: 10px;
 }
+
 /*Страница пользователя_______________________________________________________________________________________________________tagbio*/
 
 .bio_desk {
@@ -261,76 +264,84 @@ footer {
     align-items: center;
     justify-content: space-around;
 }
-.bio_desk_info{
+
+.bio_desk_info {
     display: flex;
-    flex-direction:row;
+    flex-direction: row;
     max-width: 360px;
     flex-wrap: wrap;
 }
+
 input[class*="value"] {
-    color: #000000;
+    color: #D9D9D9;
     width: 150px;
-    height: 45px;
-    background-color: #ffffff;
+    height: fit-content;
+    background-color: #506e78;
     text-align: start;
-    font-family: Inter,serif;
+    font-family: Inter, serif;
     font-size: large;
 
-
-display: flex;
-    justify-content:center;
+    display: flex;
+    justify-content: center;
     align-items: center;
 }
-input[class*="value"]::placeholder{
-    color: #000000;
-    font-family: Inter,serif;
+
+input[class*="value"]::placeholder {
+    color: rgba(217, 217, 217, 0.55);
+    font-family: Inter, serif;
 }
+
 span[class*="key"] {
     width: 150px;
-    height: 45px;
-    background-color: #ffffff;
+    height: fit-content;
+    background-color: #506e78;
     border-style: groove;
-    text-align: center;
+    color: #D9D9D9;
     margin: 0;
+    padding-right: 10px;
 
     display: flex;
-    justify-content:center;
-    align-items: center;
+    justify-content: end;
+    align-items: end;
     cursor: default;
 }
 
-.bio_desk_info_bio-edit{
+.bio_desk_info_bio-edit {
     width: 155px;
     height: 45px;
     background-color: #D9D9D9;
     text-align: center;
     margin-top: 25px;
     display: flex;
-    justify-content:center;
+    justify-content: center;
     align-items: center;
     text-decoration: none;
 
 }
-.bio_desk_info_bio-edit:hover{
+
+.bio_desk_info_bio-edit:hover {
     background-color: #41c8db;
 
 }
+
 /*Сохранение*/
-.bio_desk_info_bio-save--active{
+.bio_desk_info_bio-save--active {
     width: 155px;
     height: 45px;
     background-color: #D9D9D9;
     margin-top: 25px;
 
     display: flex;
-    justify-content:center;
+    justify-content: center;
     align-items: center;
     text-decoration: none;
 }
-.bio_desk_info_bio-save--nonactive{
+
+.bio_desk_info_bio-save--nonactive {
     visibility: hidden;
 }
-.bio_desk_info_bio-save--active:hover{
+
+.bio_desk_info_bio-save--active:hover {
     background-color: #41c8db;
 }
 
