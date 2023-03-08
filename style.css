@@ -1,27 +1,29 @@
 /*ВОПРОС ОТВЕТЫ*/
 /*Общие для всех_______________________________________________________________________________________________________tagcomm*/
 body {
-    font-family: Inter;
+    font-family: Inter, serif;
+    margin: 0;
 }
 
 header {
+    padding: 0;
     display: flex;
     background-color: #41c8db;
     align-items: center;
     border: none;
-    font-family: Inter;
+    font-family: Inter, serif;
 }
 
 footer {
     text-align: center;
-
+    height: 3vh;
     background-color: #41c8db;
 }
 
 .back {
     display: flex;
     background-color: #578b9b;
-    height: 92vh;
+    height: 93vh;
 }
 
 .desk {
@@ -38,6 +40,7 @@ footer {
 
 
 /*Страница авторизации_______________________________________________________________________________________________________tagauth*/
+
 .head_user-fio {
     text-decoration: none;
     color: #000;
@@ -75,7 +78,6 @@ footer {
 }
 
 .desk_authorization {
-
     position: absolute;
     display: flex;
     flex-direction: column;
@@ -108,7 +110,6 @@ footer {
 
 ::-webkit-input-placeholder {
     color: #FFFFFFD8;
-
 }
 
 ::-moz-placeholder {
@@ -119,7 +120,6 @@ footer {
     display: flex;
     justify-content: space-between;
     width: 500px;
-
 }
 
 .desk_authorization_buttons-enter {
@@ -136,7 +136,6 @@ footer {
     border-radius: 10px;
     border: none;
     font-size: x-large;
-
 }
 
 .desk_authorization_error-login_active {
@@ -154,6 +153,8 @@ footer {
     font-size: xx-large;
     color: #D9D9D9;
 }
+
+
 /*Страница теста_______________________________________________________________________________________________________tagtest*/
 
 .test_desk {
@@ -188,14 +189,12 @@ footer {
     justify-content: space-around;
 }
 
-
 .answers button {
     background-color: bisque;
     border-radius: 5px;
     width: 33%;
     flex: 1 1 auto;
     margin: 0 2% 2%;
-
 
 }
 
@@ -248,6 +247,93 @@ footer {
     border: none;
     text-align: center;
     padding: 10px;
+}
+/*Страница пользователя_______________________________________________________________________________________________________tagbio*/
+
+.bio_desk {
+    padding: 1vw;
+    row-gap: 1%;
+    margin-left: 12vw;
+    width: 75vw;
+    background-color: #506e78;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+.bio_desk_info{
+    display: flex;
+    flex-direction:row;
+    max-width: 350px;
+
+
+    flex-wrap: wrap;
+}
+span[class*="value"] {
+    width: 150px;
+    height: 45px;
+    background-color: #D9D9D9;
+    flex: 0 0 auto;
+    margin-left: 25px;
+    margin-bottom: 25px;
+    text-align: center;
+
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+span[class*="key"] {
+    width: 150px;
+    height: 45px;
+    background-color: #C4C4D073;
+    flex: 0 0 auto;
+    margin-left: 25px;
+    margin-bottom: 25px;
+    text-align: center;
+
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+
+.bio_desk_info_bio-edit{
+    width: 220px;
+    height: 45px;
+    background-color: #D9D9D9;
+    flex: 0 0 auto;
+    margin-left: 25px;
+    margin-bottom: 25px;
+    text-align: center;
+
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    text-decoration: none;
 
 }
+.bio_desk_info_bio-edit:hover{
+    background-color: #41c8db;
+
+}
+/*Сохранение*/
+.bio_desk_info_bio-save--active{
+    width: 150px;
+    height: 45px;
+    background-color: #D9D9D9;
+    flex: 0 0 auto;
+    margin-left: 25px;
+    margin-bottom: 25px;
+
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    text-decoration: none;
+}
+.bio_desk_info_bio-save--nonactive{
+    visibility: hidden;
+}
+.bio_desk_info_bio-save--active:hover{
+    background-color: #41c8db;
+}
+
 
